@@ -8,5 +8,18 @@
 }
 
 body {
-    background-color :"#FFF9EA";
+    background-color :#FFF9EA;
+}
+section{
+    padding: 28px 8%;
+}
+a{
+    text-decoration: none;
+}
+.sectionTitle{
+    color: #e9a209;
+    font-size: 1.563rem;
+}
+.sectionSubtitle{
+    font-size: 2.1875rem;
 }

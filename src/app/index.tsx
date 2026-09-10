@@ -2,6 +2,8 @@ import { useState } from "react";
 import Header from "./header";
 
 import  HomeSection from "./HomeSections";
+import MenuSection from "./MenuSection";
+import AvaliacaoSection from "./AvalicaoSection";
 
 export default function App(){
 
@@ -13,6 +15,8 @@ export default function App(){
             <Header foco={foco} setFoco={(t)=>setFoco(t)}/>
             <main>
                 <HomeSection focoSections={foco}/>
+                <MenuSection/>
+                <AvaliacaoSection/>
             </main>
         </div>
     )

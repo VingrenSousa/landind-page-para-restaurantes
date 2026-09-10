@@ -1,0 +1,24 @@
+.socialMidia{
+    display: flex;
+    gap:18px;
+   
+    
+    
+}
+.socialMidia a{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 40px;
+    background-color: #ffffff;
+    font-size: 1.25rem;
+    border-radius: 10px;
+    color: #1d1d1d;
+    box-shadow: 0, 0, 12px 4px rgba(0,0,0,0.1);
+}
+.socialMidia a:hover{
+    
+    box-shadow: 0px,0px, 12px 8px rgba(0,0,0,0.3);
+}

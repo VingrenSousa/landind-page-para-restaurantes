@@ -1,0 +1,102 @@
+.conteinerHome{
+    display: flex;
+    min-height: calc(100vh - 90px);
+    position: relative;
+}
+.cta{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    margin-top: 28px;
+}
+.cta .title{
+    font-size:4rem ;
+    color:#1d1d1d ;
+}
+.cta .title span{
+    color: #e9a209 ;
+}
+.cta .description{
+    font-size: 1.2rem;
+}
+.cta .cta_Buttons{
+    display: flex;
+    gap: 24px;
+}
+.cta_Buttons a{
+    list-style: none;
+    color:#1d1d1d ;
+    text-decoration: none;
+}
+.cta_Buttons .buttonTel{
+    display: flex;
+    gap: 8px;
+    background-color: #ffff;
+    padding:8px 14px ;
+    font-weight: 500;
+    box-shadow: 0 0 12px 4px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    align-items: center;
+}
+.banner{
+    display: flex;
+    align-items: start;
+    justify-content: end;
+    width: 70%;
+    img{
+        height: 100%;
+        width: fit-content;
+        
+    }
+    z-index: 2;
+}
+.shape{
+    background-color: #ffe8b4;
+    width: 50%;
+    height: 100%;
+
+    position: absolute;
+
+    border-radius: 40% 30% 0% 20%;
+    top:0;
+    right: 0;
+    z-index: 1;
+}
+.socialMidia{
+    
+    width: fit-content ;
+}
+
+@media screen and (max-width:1170px){
+    .conteinerHome{
+    
+        min-height: 100%;
+        padding-top: 0;
+    }
+    .banner,
+    .banner img, 
+    .conteinerHome .shape{
+         display: none;
+    }
+    .cta{
+        width: 100%;
+        text-align: center;
+        text-align: center;
+    }
+    .cta_Buttons{
+        justify-content: center;
+
+    }
+    .socialMidia{
+       width: 100%;
+       display: flex;
+       justify-content: center;
+    }
+}
+
+@media screen and (max-width:450px){
+    .buttonTel button{
+        display: none;
+    }
+}

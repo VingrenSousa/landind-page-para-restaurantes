@@ -1,6 +1,10 @@
 .conteinerHeader{
     width: 100%;
     padding: 28px;
+    position: sticky;
+    top: 0;
+    background-color: #fff9ea;
+    z-index: 10;
 }
 .NavBar{
     width: 100%;
@@ -21,6 +25,7 @@
     display: flex;
     list-style: none;
     gap: 48px;
+    flex-direction: row;
 }
 .nav_item button{
     text-decoration:none ;
@@ -37,7 +42,11 @@
 }
 .MenuMobile{
     display: none;
+    &.menuAction{
+          display: none;
+    }
 }
+
 
 
 @media screen and (max-width:1170px){
@@ -58,4 +67,23 @@
        
        
     }
+    .bto_mobileMenu button{
+        border: none;
+        display: block;
+        background-color: transparent;
+        font-size:0.2rem ;
+    }
+    
 }
+
+@media screen and (max-width:600px){
+    
+    .bto_mobileMenu button{
+        border: none;
+        display: block;
+        background-color: transparent;
+        font-size:0.1rem ;
+    }
+    
+}
+

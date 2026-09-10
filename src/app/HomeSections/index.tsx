@@ -2,17 +2,18 @@ import Button from "../../components/button"
 import "./styles.css"
 
 import { BsTelephoneFill } from "react-icons/bs";
-import { FaWhatsapp,FaFacebook } from "react-icons/fa";
-import { TiSocialInstagram } from "react-icons/ti";
+
 
 import heroImg from "../../assets/hero.png"
+import SocialMidia from "../../components/socialMidia";
 
 type propsFoco={
     focoSections:"Home" | "Cardàpio" | "Avaliacão"
 }
 export default function  HomeSection({focoSections}:propsFoco){
     return(
-        <section>
+        <section className="conteinerHome">
+            <div className="shape"></div>
             <div className="cta">
                 <h1 className="title">
                     O sabor vai até 
@@ -26,24 +27,17 @@ export default function  HomeSection({focoSections}:propsFoco){
                    <Button title="Ver cardápio"/>
 
                    <a href="tel:" className="buttonTel">
-                        <Button title="(11)99999-9999">
+                        <Button >
                             <BsTelephoneFill/>
                         </Button>
-                   </a>
+                        (11)99999-9999
+                   </a>    
+                   
                 </div>
                 <div className="socialMidia">
-                    
-                    <a href="#">  
-                        <FaWhatsapp/>
-                    </a>
-                    <a href="#">
-                        <TiSocialInstagram/>      
-                    </a>               
-                    <a href="#">
-                        <FaFacebook/>  
-                    </a>
-
+                    <SocialMidia/>
                 </div>
+                
             </div>
             <div className="banner">
                 <img src={heroImg} alt="banner"/>

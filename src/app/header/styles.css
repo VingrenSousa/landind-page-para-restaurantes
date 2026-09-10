@@ -1,0 +1,61 @@
+.conteinerHeader{
+    width: 100%;
+    padding: 28px;
+}
+.NavBar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+   
+    
+}
+.NavBar>div{
+  display: flex;
+        >p{
+            color:#e9a209 ;
+            padding-left: 4px;
+        }
+}
+.nav_list{
+    display: flex;
+    list-style: none;
+    gap: 48px;
+}
+.nav_item button{
+    text-decoration:none ;
+    color: #1d1d1dad;
+    border:none;
+    background:none;
+}
+.nav_item.active button {
+    color: #1d1d1d;
+    border-bottom: 3px solid #ffe100;
+}
+.bto_mobileMenu{
+    display: none;
+}
+.MenuMobile{
+    display: none;
+}
+
+
+@media screen and (max-width:1170px){
+    .nav_list,
+    .btn{
+        display: none;
+    }
+    
+    .bto_mobileMenu{
+        border: none;
+        display: block;
+        background-color: transparent;
+        font-size:1.5rem ;
+    }
+    .MenuMobile.menuAction{
+        display: flex;
+        align-items: center;
+       
+       
+    }
+}

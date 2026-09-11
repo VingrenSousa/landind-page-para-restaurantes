@@ -1,0 +1,34 @@
+.footer{
+    background-color: #FFe8b4;
+     display: flex;
+     flex-direction: column;
+}
+.footerItems{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 8% 24px 8%;
+    align-items: center;
+}
+.footerItems span{ 
+    color: #1d1d1d;
+    font-weight: 500;
+}
+@media screen and (max-width:1170px){
+   .footerItems div{ 
+    
+     justify-content: end;
+    }
+}
+
+@media screen and (max-width:600px){
+    .footerItems{
+        flex-direction: column;
+        gap: 20px;
+        div{
+            justify-content: center;
+        }
+    }
+    
+    
+   
+}

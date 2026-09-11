@@ -4,6 +4,7 @@ import Header from "./header";
 import  HomeSection from "./HomeSections";
 import MenuSection from "./MenuSection";
 import AvaliacaoSection from "./AvalicaoSection";
+import Footer from "./footer";
 
 export default function App(){
 
@@ -18,6 +19,7 @@ export default function App(){
                 <MenuSection/>
                 <AvaliacaoSection/>
             </main>
+            <Footer/>
         </div>
     )
 }

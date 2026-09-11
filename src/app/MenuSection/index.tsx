@@ -1,11 +1,11 @@
 import "./styles.css"
-import { FaHeart } from "react-icons/fa";
+
 import dish1 from "../../assets/dish.png" 
 import dish2 from "../../assets/dish2.png" 
 import dish3 from "../../assets/dish3.png" 
 import dish4 from "../../assets/dish4.png" 
 import Dish from "../../components/dish";
-import { useEffect, useRef, useState, type RefObject } from "react";
+import { useEffect, useState, type RefObject } from "react";
 
 
 type propsRef={

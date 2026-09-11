@@ -13,7 +13,7 @@ export default function App(){
     const menuScrolRef = useRef<HTMLDivElement>(null);
     const AvalicaoRef = useRef<HTMLDivElement>(null);
 
-     const [scrollY, setScrollY] = useState(0);
+
 
     function scrollToMenu() {
         if(foco==="Home"){

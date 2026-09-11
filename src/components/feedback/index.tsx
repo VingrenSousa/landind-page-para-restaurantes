@@ -19,7 +19,7 @@ export default function Feedback({avatar,name,star,description}:propsFeedback) {
                     { name }
                     <span>
                        { star&&
-                        Array.from({length:star}).map((_,index)=><FaStar/>)}
+                        Array.from({length:star}).map((_,index)=><FaStar key={index}/>)}
                     </span>
                 </p>
                 <p>

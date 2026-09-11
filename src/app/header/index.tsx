@@ -4,7 +4,7 @@ import { IoMenu } from "react-icons/io5";
 import MenuMobile from "../../components/menuMobile";
 import "./styles.css"
 import { THEME } from "../../styles/theme";
-import { useState, type RefObject } from "react";
+import { useState,  } from "react";
 import { MdRestaurantMenu } from "react-icons/md";
 
 type propsHeader={

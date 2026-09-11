@@ -4,12 +4,13 @@ import { IoMenu } from "react-icons/io5";
 import MenuMobile from "../../components/menuMobile";
 import "./styles.css"
 import { THEME } from "../../styles/theme";
-import { useState } from "react";
+import { useState, type RefObject } from "react";
 import { MdRestaurantMenu } from "react-icons/md";
 
 type propsHeader={
     foco:"Home"|"Cardàpio"|"Avaliacão",
-    setFoco(t:"Home"|"Cardàpio"|"Avaliacão",):void
+    setFoco(t:"Home"|"Cardàpio"|"Avaliacão",):void,
+   
 }
 export default function Header({foco,setFoco}:propsHeader){
     const[isMenu,setIsMenu]=useState(false)
@@ -19,8 +20,8 @@ export default function Header({foco,setFoco}:propsHeader){
     }
 
     return(
-        <header className="conteinerHeader">
-            <nav className="NavBar">
+        <header  className="conteinerHeader">
+            <nav  className="NavBar">
                 <div>
                     <FaBurger size={24} color={THEME.COLOR.laranja}/>
                     <p> FOOD</p>

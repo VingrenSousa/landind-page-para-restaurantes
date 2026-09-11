@@ -9,6 +9,7 @@
 
 body {
     background-color :#FFF9EA;
+    overflow-x: hidden;
 }
 section{
     padding: 28px 8%;
@@ -23,3 +24,4 @@ a{
 .sectionSubtitle{
     font-size: 2.1875rem;
 }
+

@@ -5,10 +5,39 @@ import dish2 from "../../assets/dish2.png"
 import dish3 from "../../assets/dish3.png" 
 import dish4 from "../../assets/dish4.png" 
 import Dish from "../../components/dish";
-export default function MenuSection(){
+import { useEffect, useRef, useState, type RefObject } from "react";
+
+
+type propsRef={
+     menuScrolRef:RefObject<HTMLDivElement | null>;
+}
+export default function MenuSection({menuScrolRef}:propsRef){
+
+    const [visible, setVisible] = useState(false);
+    
+
+    useEffect(() => {
+        const observer = new IntersectionObserver((entries) => {
+            const entry=entries[0]
+            if(entry.isIntersecting){
+                setVisible(true)
+                
+            }else{
+                setVisible(false)
+            }
+            
+        },{threshold:0.1})
+
+        if (menuScrolRef.current) {
+            observer.observe(menuScrolRef.current);
+        }
+
+        return () => observer.disconnect();
+  }, []);
+
     return(
-        <section className="menu">
-            <h2 className="sectionTitle"> Cardápios</h2>
+        <section className={visible?"menu active":"menu"} ref={menuScrolRef}>
+            <h2 className={"sectionTitle"}> Cardápios</h2>
             <h3 className="sectionSubtitle"> Nossos pratos especiais</h3>
 
             <div className="dishes">
